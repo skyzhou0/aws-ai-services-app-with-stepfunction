@@ -25,3 +25,6 @@ The broad objective is to build a blueprint to leveage AWS AI services and AWS S
 ## Application Access
 Step function pipepline needs to assume an IAM role (let's name it "step-function-execution-role"), such role should allow Step function to execute Lambda functions. A (in-line) policy permission can be found in "step-function-execution-policy.json".
 
+## Reference:
+Amazon Polly: https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.start_speech_synthesis_task
+Amazon Translate: https://boto3.amazonaws.com/v1/documentation/api/1.9.42/reference/services/translate.html

@@ -5,7 +5,7 @@
       "Type": "Task",
       "Resource": "arn:aws:states:::lambda:invoke",
       "Parameters": {
-        "FunctionName": "arn:aws:lambda:us-east-1:993335608804:function:start-transcribe-lambda:$LATEST",
+        "FunctionName": "arn:aws:lambda:us-east-1::function:start-transcribe-lambda:$LATEST",
         "Payload": {
           "Input.$": "$"
         }
@@ -21,7 +21,7 @@
       "Type": "Task",
       "Resource": "arn:aws:states:::lambda:invoke",
       "Parameters": {
-        "FunctionName": "arn:aws:lambda:us-east-1:993335608804:function:transcribe-status-lambda:$LATEST",
+        "FunctionName": "arn:aws:lambda:us-east-1::function:transcribe-status-lambda:$LATEST",
         "Payload": {
           "Input.$": "$"
         }
@@ -54,7 +54,7 @@
               "Type": "Task",
               "Resource": "arn:aws:states:::lambda:invoke",
               "Parameters": {
-                "FunctionName": "arn:aws:lambda:us-east-1:993335608804:function:translate-lambda:$LATEST",
+                "FunctionName": "arn:aws:lambda:us-east-1::function:translate-lambda:$LATEST",
                 "Payload": {
                   "Input.$": "$"
                 }
@@ -70,7 +70,7 @@
               "Type": "Task",
               "Resource": "arn:aws:states:::lambda:invoke",
               "Parameters": {
-                "FunctionName": "arn:aws:lambda:us-east-1:993335608804:function:comprehend-sentiment-lambda:$LATEST",
+                "FunctionName": "arn:aws:lambda:us-east-1::function:comprehend-sentiment-lambda:$LATEST",
                 "Payload": {
                   "Input.$": "$"
                 }
@@ -86,7 +86,7 @@
       "Type": "Task",
       "Resource": "arn:aws:states:::lambda:invoke",
       "Parameters": {
-        "FunctionName": "arn:aws:lambda:us-east-1:993335608804:function:start-polly-lambda:$LATEST",
+        "FunctionName": "arn:aws:lambda:us-east-1::function:start-polly-lambda:$LATEST",
         "Payload": {
           "Input.$": "$"
         }
